@@ -1,0 +1,54 @@
+This is a simple code to calculate area and volume
+
+
+import math
+
+#height of cone
+h=int(input("Height : "))
+#radius of cone
+r=int(input("Radius : "))
+#cover of cone
+c=math.sqrt((r*r)+(h*h))
+#Π 
+phi=22/7
+
+#calculate
+area=int(phi*r*(r+c))
+volume=int((1/3)*phi*(r*r)*h)
+print ("Area of Cone = ", area)
+print ("Volume of Cone = ", volume)
+#ex: 12 5
+
+
+#height of cone
+h=int(input("Height : "))
+#radius of cone
+r=int(input("Radius : "))
+#cover of cone
+def c (r,h):
+    c=math.sqrt((r*r)+(h*h))
+return c
+#Π 
+phi=22/7
+
+#calculate
+def area (phi,r,c) :
+    area=phi*r*(r+c)
+        print ("Area of Cone: ", area)
+def volume (phi,r,h) :
+    volume=(1/3)*phi*(r*r)*h
+        print ("Volume of Cone: ", volume)       
+#ex: 12 5
+
+
+print("Program to Calculate Area and Volume of a Cone")
+
+h=float(input("\nHeight\t: "))
+r=float(input("Radius\t: "))
+c=float(input("Cover\t: "))
+p=float(input("phi\t\t: "))
+
+def area (p,r,c) :
+    return p*r*(r+c)
+def volume (p,r,h) :
+    return (1/3)*p*(r*r)*h
